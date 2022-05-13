@@ -5,10 +5,13 @@ using System.Collections.Generic;
 namespace GradeBook
 {
 
+
   class Program
   {
     static void Main(string[] args)
     {
+
+      var book = new Book();
 
       List<double> grades = new List<double>() { 12.7, 10.9, 9.5 };
       grades.Add(56.1);
@@ -21,16 +24,8 @@ namespace GradeBook
         sum += number;
         average = sum / grades.Count;
       }
-      System.Console.WriteLine(sum);
-      System.Console.WriteLine($"The average grade is {average}");
-      if (args.Length > 0)
-      {
-        Console.WriteLine($"Hello, {args[0]}!");
-      }
-      else
-      {
-        Console.WriteLine("Hello!");
-      }
+      Console.WriteLine(sum);
+      Console.WriteLine($"The average grade is {average}");
     }
   }
 }

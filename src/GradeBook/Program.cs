@@ -8,10 +8,12 @@ namespace GradeBook
 
   class Program
   {
+
     static void Main(string[] args)
     {
 
       var book = new Book();
+      book.AddGrade(89.1);
 
       List<double> grades = new List<double>() { 12.7, 10.9, 9.5 };
       grades.Add(56.1);

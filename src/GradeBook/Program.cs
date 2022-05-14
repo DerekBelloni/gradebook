@@ -12,22 +12,14 @@ namespace GradeBook
     static void Main(string[] args)
     {
 
-      var book = new Book();
+      var book = new Book("Derek's Grade Book");
       book.AddGrade(89.1);
+      book.AddGrade(90.5);
+      book.AddGrade(77.5);
+      book.ShowStatistics();
 
-      List<double> grades = new List<double>() { 12.7, 10.9, 9.5 };
-      grades.Add(56.1);
 
 
-      var sum = 0.0;
-      var average = 0.0;
-      foreach (double number in grades)
-      {
-        sum += number;
-        average = sum / grades.Count;
-      }
-      Console.WriteLine(sum);
-      Console.WriteLine($"The average grade is {average}");
     }
   }
 }
